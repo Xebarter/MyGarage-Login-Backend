@@ -1,0 +1,71 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+
+# Coverage and test reports
+coverage/
+nyc_output/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.iml
+
+# Build and distribution folders
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.bak
+
+# System files
+.DS_Store
+
+# Dependency directories
+bower_components
+
+# SQLite database files
+*.sqlite
+*.sqlite3
+
+# Generated files by various tools
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# Docker
+Dockerfile*
+docker-compose.yml
+.dockerignore
+
+# JSON files
+*.json.map
+
+# Test files
+test-reports/
+
+# Debug
+*.pdb
+*.map
+
+# ESLint
+.eslintcache
+
+# Misc
+npm-shrinkwrap.json
