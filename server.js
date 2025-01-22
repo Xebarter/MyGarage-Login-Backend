@@ -25,7 +25,11 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://my-garage-login-frontend.vercel.app/', // Allow Vercel frontend
+    methods: 'GET,POST',
+    credentials: true
+}));
 app.use(bodyParser.json());
 
 // Routes
