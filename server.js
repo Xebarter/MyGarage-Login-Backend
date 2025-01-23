@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -7,7 +8,7 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 const PORT = 3000;
-const JWT_SECRET = 'your_jwt_secret'; // Replace with a strong, secure secret
+const JWT_SECRET = process.env.JWT_SECRET; // Replace with a strong, secure secret
 
 // MongoDB connection
 mongoose.connect('mongodb+srv://Xebarter:003326120Se,@mygarage.bxqax.mongodb.net/', {
