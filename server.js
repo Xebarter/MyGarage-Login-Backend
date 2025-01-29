@@ -11,11 +11,9 @@ const PORT = 3000;
 const JWT_SECRET = process.env.JWT_SECRET; // Replace with a strong, secure secret
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://Xebarter:003326120Se,@mygarage.bxqax.mongodb.net/', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
+mongoose.connect('mongodb+srv://Xebarter:password@mygarage.bxqax.mongodb.net/mygarageDB')
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('MongoDB connection error:', err));
 
 // User schema
 const userSchema = new mongoose.Schema({
