@@ -11,7 +11,7 @@ const PORT = 3000;
 const JWT_SECRET = process.env.JWT_SECRET; // Replace with a strong, secure secret
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://Xebarter:password@mygarage.bxqax.mongodb.net/mygarageDB')
+mongoose.connect('mongodb+srv://Xebarter:003326120Se,@mygarage.bxqax.mongodb.net/?retryWrites=true&w=majority&appName=MyGarage')
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('MongoDB connection error:', err));
 
